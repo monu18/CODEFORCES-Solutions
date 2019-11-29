@@ -195,11 +195,22 @@ int main()
 	clock_t launch=clock();
 	tc
 	{
-		int a,b;
-		cin>>a>>b;
-		ll z=b/a;
-		ll cn=b%a;
-		p1(z*z*(a-cn)+(z+1)*(z+1)*cn)
+      ll n,m,x,tot = 0;
+  	cin >> n >> m;
+  	lp(i,0,n){
+  		cin >> x;	tot += x*2;
+  	}
+  	if(m < n || n == 2){
+  		p1(-1)
+  	}
+  	else{
+  		p1(tot)
+  		lp(i,1,n+1){
+  			cout << i <<' ';
+  			if(i != n)	p1(i+1)
+  			else		p1(1)
+  		}
+  	}
 	}
 
 	clog<<((long double)(clock()-launch)/CLOCKS_PER_SEC)<<"\n";
