@@ -24,7 +24,6 @@ using namespace std;
 #define ff first
 #define ss second
 #define siz 256
-#define bc(n) __builtin_popcountll(n)
 #define leadzero(a) __builtin_clz(a)        // count leading zeroes
 #define trailzero(a) __builtin_ctz(a)       // count trailing zeroes
 #define bitcount(a) __builtin_popcount(a)   // count set bits
@@ -225,70 +224,30 @@ int main()
  //num len = s.size();
 	tc
 	{
-    ll n,s;
-    cin>>n>>s;
-    ll a[n];
-    ll sum=0;
-    ll b[n]={0};
-    for (size_t i = 0; i < n; i++) {
-      /* code */
-      cin>>a[i];
-      sum+=a[i];
-      b[i]=sum;
-    }
-    ll flag=0;
-    if (sum<=s) {
-      /* code */
-      p1(0)
-    }
-    else
-    {
-      if (n==1) {
-        /* code */
-        if (a[0]>s) {
-          /* code */
-          p1(1)
-          continue;
+        ll n,m;
+        cin>>n>>m;
+        int num[100001];
+        for(ll i = 1;i<=n;i++){
+            ll x;
+            cin>>x;
+            num[x]=i;
         }
-        else
-        {
-          p1(0)
-          continue;
+        ll ans=0;
+        ll maxx=0;
+        for(ll i = 1;i<=m;i++){
+            ll x;
+            cin>>x;
+            if(num[x]<maxx)
+            {
+                ans++;
+            }
+            else
+            {
+                ans+=(num[x]-i)*2+1;
+                maxx=num[x];
+            }
         }
-      }
-      else
-      {
-
-
-      ll maxx=0;
-      ll ans=0;
-      for (size_t i = 0; i < n; i++) {
-        /* code */
-        if (a[i]>=maxx) {
-            /* code */
-            maxx=a[i];
-            ans=i+1;
-            //flag=1;
-          //  ff=1;
-          }
-        if (b[i]>s) {
-          /* code */
-          if (b[i]-maxx<=s) {
-            /* code */
-            p1(ans)
-            break;
-          }
-          else
-          {
-            p1(0)
-            break;
-          }
-
-        }
-      }
-
-    }
-  }
+        p1(ans)
 
 	}//tc
 
