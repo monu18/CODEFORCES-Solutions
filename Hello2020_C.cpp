@@ -230,11 +230,11 @@ int main()
 	 	ll ret = 0;
 	 	for(ll i=1; i<=n; i++){
 	 		ret += (n - i + 1) * (fact[i] * fact[n - i + 1] % md);
-			p2("add= ",(n - i + 1) * (fact[i] * fact[n - i + 1] % md))
-			p2("ret ",ret)
+			// p2("add= ",(n - i + 1) * (fact[i] * fact[n - i + 1] % md))
+			// p2("ret ",ret)
 	 		ret %= md;
 	 	}
-	 	cout << ret << endl;
+	 	p1(ret)
 
 	//clog<<((long double)(clock()-launch)/CLOCKS_PER_SEC)<<"\n";
 	return 0;
