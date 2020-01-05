@@ -240,6 +240,7 @@ int main()
 		for (size_t i = 0; i < n-1; i++) {
 			/* code */
 			if (abs(a[i]-a[i+1])==2) {
+			if (abs(a[i]-a[i+1])>=2) {
 				/* code */
 				yes();
 				cout<<i+1<<" "<<i+2<<"\n";
