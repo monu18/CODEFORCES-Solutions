@@ -218,7 +218,7 @@ int main()
   ll n,k,m,ans=0,flag=0,temp=0,f1=0,count=0,f2=0,sum=0,xx=0,minn1=big,minn2=big,maxx1=small,maxx2=small;
   ll a,b,c,d;
   cin>>a>>b>>c>>d;
-  p3(c,c,b)
+  p3(b,c,c)
 }
 
 
