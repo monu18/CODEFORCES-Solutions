@@ -216,7 +216,7 @@ int main()
   //  double PI= 2 * acos(0.0); or M_PI
   ll n,k,m,ans=0,flag=0,temp=0,f1=0,count=0,f2=0,sum=0,xx=0,minn1=big,minn2=big,maxx1=small,maxx2=small;
   cin>>n>>m;
-  ll e=0,o=0;
+  ll e=0,o=0,z=0;
   char x;
   lp(i,0,n*m)
   {
@@ -229,9 +229,13 @@ int main()
       /* code */
       o++;
     }
+    if (x=='G') {
+      /* code */
+      z++;
+    }
 
   }
-  if (e+o==(n*m)) {
+  if (e+o+z==(n*m)) {
     /* code */
     p1("#Black&White")
     return 0;
