@@ -213,7 +213,7 @@ int main()
   //  while(clock()<CLOCKS_PER_SEC*10)
   //  using num = modnum<int(1e9)+7>;
   //  num len = s.size();
-  //  double PI= 2 * acos(0.0); or M_PI
+  //  double PI= 2 * acos(0.0); or M_PIa
   ll n,k,m,ans=0,flag=0,temp=0,f1=0,count=0,f2=0,sum=0,xx=0,minn1=big,minn2=big,maxx1=small,maxx2=small;
   cin>>n;
   ina(a,n);
