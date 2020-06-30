@@ -226,6 +226,7 @@ int main()
     }
   }
   p1(ans)
+
   // weed mara tha mai solution likhne me haha
   // list<ll>lst;
   // lp(i,0,n)
