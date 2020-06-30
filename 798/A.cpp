@@ -227,9 +227,20 @@ int main()
       count++;
     }
   }
-  if (count<=1) {
+  if (count==1) {
     /* code */
     yes();
+  }
+  else if (count==0) {
+    /* code */
+    if (s.size()%2==1) {
+      /* code */
+      yes();
+    }
+    else
+    {
+      no();
+    }
   }
   else
   {
