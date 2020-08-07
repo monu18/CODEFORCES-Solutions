@@ -233,12 +233,7 @@ int main()
       count=0;
       lp(j,0,n)
       {
-        // lp(dd,0,10)
-        // {
-        //   cout<<v[dd]<<" ";
-        //
-        // }
-        // nL
+
         if (a[j]>=i) {
           /* code */
           continue;
@@ -265,15 +260,7 @@ int main()
           }
         }
       }
-      // //v.clear();
-      // if (count==8) {
-      //   /* code */
-      //   trace(i)
-      // }
-      // if (count==6) {
-      //   /* code */
-      //   trace(i)
-      // }
+
 
       maxx1=max(maxx1,count);
       //trace2(i,maxx1)
