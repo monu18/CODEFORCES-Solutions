@@ -194,7 +194,7 @@ void no()
 //###########################################################################################
 int main()
 {
-//	fast
+	fast
 //	clock_t launch=clock();
 	// string r = s1.substr(1, 3);
 	//while(clock()<CLOCKS_PER_SEC*10)
@@ -212,7 +212,7 @@ int main()
       continue;
     }
     ll flag=0,x;
-    for (size_t i = 1; i <= sqrt(n)+10; i++) {
+    for (size_t i = 1; i <= n; i++) {
       /* code */
       x=d/(i+1);
       if (d%(i+1)!=0) {
